@@ -1,0 +1,10 @@
+package com.example.restservice;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+public class ProductCustomerService {
+
+	private static String[] products = {"BMW","Mercedes","WEED"};
+	private static String[] customers = {"Sairaz","Veer","Nilay"};
+	private static AtomicLong ID = new AtomicLong();
+}

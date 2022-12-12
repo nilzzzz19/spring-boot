@@ -1,0 +1,42 @@
+package com.cpp.Brcm.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.cpp.Brcm.models.Address;
+import com.cpp.Brcm.models.Customer;
+import com.cpp.Brcm.repositories.CustomerRepository;
+
+@Controller
+@RequestMapping("/demo")
+public class CustomerController {
+	
+	@Autowired
+	private CustomerRepository customerRepository;
+	
+	@PostMapping("/add-customer")
+	 public Customer createCustomer(@RequestBody Customer customer) {
+		Address address = new Address("xyz",1,2,"cvv","abc");
+		customer = new Customer(123, null, "vvv", 0, address);
+        return customerRepository.save(customer);
+    }
+	  @GetMapping("/bulkcreate")
+	  public String bulkcreate(){
+	  // save a single Customer
+	  customerRepository.save(new Customer());
+
+	  // save a list of Customers
+	          repository.saveAll(Arrays.asList(new Customer("Salim", "Khan")
+	                         , new Customer("Rajesh", "Parihar")
+	                         , new Customer("Rahul", "Dravid")
+	                         , new Customer("Dharmendra", "Bhojwani")));
+
+	  return "Customers are created";
+	  }
+	
+
+}

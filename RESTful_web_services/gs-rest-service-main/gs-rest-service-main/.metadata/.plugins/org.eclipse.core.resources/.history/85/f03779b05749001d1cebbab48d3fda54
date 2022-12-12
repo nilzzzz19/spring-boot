@@ -1,0 +1,9 @@
+package com.example.restservice;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+public class ProductCustomerService {
+
+	
+	private static AtomicLong ID = new AtomicLong();
+}

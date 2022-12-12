@@ -1,0 +1,7 @@
+package com.cpp.Brcm.models;
+
+public enum CustType {
+
+	Student,Professor,ProfessorStudent	
+	
+}

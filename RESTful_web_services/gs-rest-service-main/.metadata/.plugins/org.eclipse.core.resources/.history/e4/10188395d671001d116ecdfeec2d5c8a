@@ -1,0 +1,6 @@
+package com.cpp.Brcm.models;
+
+@Entity
+public class Address {
+
+}

@@ -1,0 +1,22 @@
+package com.example.restservice;
+
+import java.util.concurrent.atomic.AtomicLong;
+
+public class ProductCustomerData {
+
+	private final AtomicLong counter = new AtomicLong();
+	Customer c1 = new Customer("VEER");			
+	Product p1 = new Product(counter.getAndIncrement(), "EDIBLES");
+	
+	Customer c2 = new Customer("SAI");			
+	Product p2 = new Product(counter.getAndIncrement(), "INDICA");
+	
+	Customer c3 = new Customer("NILAY");			
+	Product p3 = new Product(counter.getAndIncrement(), "SATIVA");
+	
+	
+	public Product getProductCustData() {
+		
+	}
+	
+}

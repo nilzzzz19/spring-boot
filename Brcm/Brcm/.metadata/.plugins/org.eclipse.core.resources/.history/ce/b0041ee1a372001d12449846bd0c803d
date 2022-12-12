@@ -1,0 +1,11 @@
+package com.cpp.Brcm.models;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "activities")
+public class Activity {
+	
+
+}
