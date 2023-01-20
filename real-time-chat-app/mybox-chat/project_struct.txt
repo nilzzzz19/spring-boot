@@ -1,0 +1,15 @@
+/src
+    /main
+        /java
+            /com.example (or your package name)
+                /config (contains the MongoConfig class)
+                /controller (contains the ChatController class)
+                /model (contains the Chat class)
+                /repository (contains the ChatRepository class)
+                /service (contains the ChatService class)
+                /websocket (contains the ChatEndpoint class)
+                /Application.java (the main class)
+        /resources
+            /application.properties (or application.yml)
+            /static (contains the chat.html file)
+            /templates (contains the chat.html file)
